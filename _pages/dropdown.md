@@ -1,16 +1,14 @@
 ---
 layout: page
-title: submenus
+title: 
 nav: true
 nav_order: 8
-dropdown: true
+dropdown: false
 children:
   - title: publications
     permalink: /publications/
   - title: divider
-  - title: projects
-    permalink: /projects/
-  - title: divider
-  - title: blog
-    permalink: /blog/
+  - title: cv
+    newtab: true
+    permalink: /assets/pdf/kharazian_cv.pdf
 ---

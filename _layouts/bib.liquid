@@ -1,6 +1,15 @@
 ---
 ---
 <div class="row">
+  {% for entry in site.publications %}
+    <div id="{{ entry.key }}" class="col-sm-12">
+      <div class="title">{{ entry.title }}</div>
+      <div class="author">{{ entry.author }}</div>
+      <div class="journal">{{ entry.journal }}</div>
+      <div class="year">{{ entry.year }}</div>
+      <!-- Add more fields as needed -->
+    </div>
+  {% endfor %}
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
       {%- if entry.abbr -%}
